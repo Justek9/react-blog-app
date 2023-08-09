@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/esm/Card'
 import Col from 'react-bootstrap/esm/Col'
-import Nav from 'react-bootstrap/Nav'
 import { NavLink } from 'react-router-dom'
 
 const Post = ({ post }) => {
