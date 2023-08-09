@@ -1,9 +1,5 @@
 const Footer = () => {
-	return (
-		<div>
-			<h2>Footer</h2>
-		</div>
-	)
+	return <footer className='text-center text-secondary'>Copyright © BlogApp 2023</footer>
 }
 
 export default Footer
