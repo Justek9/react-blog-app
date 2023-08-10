@@ -3,7 +3,6 @@ import Modal from 'react-bootstrap/Modal'
 import { useDispatch } from 'react-redux'
 import { deletePost } from '../../redux/postsRedux'
 import { useParams } from 'react-router-dom'
-import { useState } from 'react'
 
 const DeleteModal = props => {
 	const { id } = useParams()

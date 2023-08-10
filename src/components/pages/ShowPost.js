@@ -1,11 +1,9 @@
 import Button from 'react-bootstrap/Button'
-import { NavLink } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import { NavLink, Navigate, useParams } from 'react-router-dom'
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import { getPostById } from '../../redux/postsRedux'
 import DeleteModal from '../features/DeleteModal'
-import { Navigate } from 'react-router-dom'
 
 const ShowPost = () => {
 	const { id } = useParams()
