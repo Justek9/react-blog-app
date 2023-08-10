@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { deletePost, getPostById } from '../../redux/postsRedux'
+import { getPostById } from '../../redux/postsRedux'
 import DeleteModal from '../features/DeleteModal'
 import { Navigate } from 'react-router-dom'
 

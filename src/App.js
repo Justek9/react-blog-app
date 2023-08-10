@@ -9,9 +9,7 @@ import NotFound from './components/pages/NotFound'
 import Header from './components/views/Header'
 import Footer from './components/views/Footer'
 
-
 function App() {
-
 	return (
 		<Container>
 			<Header />
@@ -23,8 +21,6 @@ function App() {
 				<Route path='/about' element={<About />}></Route>
 				<Route path='/*' element={<NotFound />} />
 			</Routes>
-
-
 			<Footer />
 		</Container>
 	)

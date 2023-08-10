@@ -1,7 +1,10 @@
+import AddPostForm from '../features/AddPostForm'
+
 const AddPost = () => {
 	return (
-		<div>
-			<h2>AddPost</h2>
+		<div className='d-flex flex-column align-items-left'>
+			<h3>Add Post</h3>
+			<AddPostForm />
 		</div>
 	)
 }
