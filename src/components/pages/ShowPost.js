@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { getPostById } from '../../redux/postsRedux'
 import DeleteModal from '../features/DeleteModal'
+import { dateToStr } from '../../utils/dateToStr'
 
 const ShowPost = () => {
 	const { id } = useParams()
@@ -24,7 +25,7 @@ const ShowPost = () => {
 					</p>
 					<p>
 						<span className='fw-bold'>Published: </span>
-						{post.publishedDate}
+						{dateToStr(post.publishedDate)}
 					</p>
 					<p dangerouslySetInnerHTML={{ __html: post.content }} />
 				</div>

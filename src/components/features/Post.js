@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/esm/Card'
 import Col from 'react-bootstrap/esm/Col'
 import { NavLink } from 'react-router-dom'
+import { dateToStr } from '../../utils/dateToStr'
 
 const Post = ({ post }) => {
 	return (
@@ -17,7 +18,7 @@ const Post = ({ post }) => {
 					</Card.Text>
 					<Card.Text>
 						<span className='fw-bold'>Published: </span>
-						{post.publishedDate}
+						{dateToStr(post.publishedDate)}
 					</Card.Text>
 					<Card.Text>{post.shortDescription}</Card.Text>
 					<Button variant='primary' as={NavLink} to={`/post/${post.id}`}>
