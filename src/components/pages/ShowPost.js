@@ -26,7 +26,7 @@ const ShowPost = () => {
 						<span className='fw-bold'>Published: </span>
 						{post.publishedDate}
 					</p>
-					<p>{post.content}</p>
+					<p dangerouslySetInnerHTML={{ __html: post.content }} />
 				</div>
 				<div className='d-flex justify-content-center'>
 					<Button variant='outline-info' as={NavLink} to={`/post/edit/${post.id}`}>

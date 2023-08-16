@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import PropTypes from 'prop-types'
+import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.snow.css';
 
 const PostForm = ({ action, actionText, ...props }) => {
 	const [title, setTitle] = useState(props.title || '')
@@ -60,13 +62,7 @@ const PostForm = ({ action, actionText, ...props }) => {
 
 					<Form.Group className='mb-3'>
 						<Form.Label>Main Content</Form.Label>
-						<Form.Control
-							as='textarea'
-							rows={10}
-							placeholder='Leave a comment here'
-							value={content}
-							onChange={e => setContent(e.target.value)}
-						/>
+						<ReactQuill theme="snow" placeholder='Leave a comment here' value={content} onChange={setContent} style={{ height: "350px", paddingBottom:"30px"}}/>
 					</Form.Group>
 				</Col>
 			</Row>
