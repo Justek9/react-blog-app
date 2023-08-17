@@ -9,8 +9,6 @@ const EditPostForm = () => {
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
 
-	console.log(post.category)
-
 	const handleSubmit = post => {
 		dispatch(editPost({ ...post, id }))
 		navigate(`/post/${id}`)

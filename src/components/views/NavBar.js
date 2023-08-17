@@ -8,8 +8,11 @@ const NavBar = () => {
 				Blog.app
 			</Nav.Link>
 			<div className='d-flex justify-content-end align-items-center'>
-				<Nav.Link className='text-white' as={NavLink} to='/'>
+				<Nav.Link className='text-white active' as={NavLink} to='/'>
 					Home
+				</Nav.Link>
+				<Nav.Link className='text-white' as={NavLink} to='/categories'>
+					Categories
 				</Nav.Link>
 				<Nav.Link className='text-white' as={NavLink} to='/about'>
 					About

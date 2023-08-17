@@ -24,7 +24,6 @@ const PostForm = ({ action, actionText, ...props }) => {
 	const [dateError, setDateError] = useState(false)
 
 	const categories = useSelector(state => getAllCategories(state))
-	console.log(categories)
 
 	const handleSubmit = e => {
 		// validate date and post content:
@@ -88,12 +87,9 @@ const PostForm = ({ action, actionText, ...props }) => {
 					<Form.Group className='mb-3'>
 						<Form.Label>Category</Form.Label>
 						<Form.Select aria-label='Select category' value={category} onChange={e => setCategory(e.target.value)}>
+							<option>Select category...</option>
 							{categories.map((category, i) => {
-								return (
-									<option key={i}>
-										{category}
-									</option>
-								)
+								return <option key={i}>{category}</option>
 							})}
 						</Form.Select>
 					</Form.Group>

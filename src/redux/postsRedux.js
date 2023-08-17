@@ -8,6 +8,10 @@ export const getPostById = ({ posts }, id) => {
 	return posts.filter(post => post.id === id)[0]
 }
 
+export const getPostbyCategory = ({ posts }, category) => {
+	return posts.filter(post => post.category === category)
+}
+
 // actions
 const createActionName = actionName => `app/posts/${actionName}`
 const DELETE_POST = createActionName('DELETE_POST')

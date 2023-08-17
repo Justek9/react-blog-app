@@ -8,6 +8,8 @@ import EditPost from './components/pages/EditPost'
 import NotFound from './components/pages/NotFound'
 import Header from './components/views/Header'
 import Footer from './components/views/Footer'
+import AllCategories from './components/features/AllCategories'
+import PostsByCategory from './components/features/PostsByCategory'
 
 function App() {
 	return (
@@ -18,6 +20,8 @@ function App() {
 				<Route path='/post/:id' element={<Post />}></Route>
 				<Route path='/post/add' element={<AddPost />}></Route>
 				<Route path='/post/edit/:id' element={<EditPost />}></Route>
+				<Route path='/categories' element={<AllCategories />}></Route>
+				<Route path='/categories/:category' element={<PostsByCategory />}></Route>
 				<Route path='/about' element={<About />}></Route>
 				<Route path='/*' element={<NotFound />} />
 			</Routes>
