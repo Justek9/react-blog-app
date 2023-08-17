@@ -27,6 +27,10 @@ const ShowPost = () => {
 						<span className='fw-bold'>Published: </span>
 						{dateToStr(post.publishedDate)}
 					</p>
+					<p>
+						<span className='fw-bold'>Category: </span>
+						{post.category}
+					</p>
 					<p dangerouslySetInnerHTML={{ __html: post.content }} />
 				</div>
 				<div className='d-flex justify-content-center'>

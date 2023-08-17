@@ -20,6 +20,10 @@ const Post = ({ post }) => {
 						<span className='fw-bold'>Published: </span>
 						{dateToStr(post.publishedDate)}
 					</Card.Text>
+					<Card.Text>
+						<span className='fw-bold'>Category: </span>
+						{post.category}
+					</Card.Text>
 					<Card.Text>{post.shortDescription}</Card.Text>
 					<Button variant='primary' as={NavLink} to={`/post/${post.id}`}>
 						Read more

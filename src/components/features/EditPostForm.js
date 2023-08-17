@@ -9,7 +9,7 @@ const EditPostForm = () => {
 	const navigate = useNavigate()
 	const dispatch = useDispatch()
 
-	
+	console.log(post.category)
 
 	const handleSubmit = post => {
 		dispatch(editPost({ ...post, id }))
@@ -25,7 +25,7 @@ const EditPostForm = () => {
 				title={post.title}
 				author={post.author}
 				publishedDate={post.publishedDate}
-				category={post.selectedCategory}
+				category={post.category}
 				shortDescription={post.shortDescription}
 				content={post.content}
 			/>
